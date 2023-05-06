@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/white</item>
+    </style>
+
+    <style name="NewsFeedTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@color/almostWhite</item>
+        <item name="android:navigationBarColor">@color/almostWhite</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    </style>
+
+    <style name="AlbertTheme" parent="NewsFeedTheme"/>
+
+    <style name="FridayTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/FridayAnimation</item>
+    </style>
+    
+    <style name="FridayAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_out</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowHideAnimation">@anim/fade_out</item>
+        <item name="android:windowShowAnimation">@anim/fade_in</item>
+        <item name="android:imeExtractEnterAnimation">@anim/fade_in</item>
+        <item name="android:imeExtractExitAnimation">@anim/fade_out</item>
+        <item name="android:inAnimation">@anim/fade_in</item>
+        <item name="android:outAnimation">@anim/fade_out</item>
+        <item name="android:taskOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:taskCloseEnterAnimation">@anim/fade_out</item>
+        <item name="android:taskOpenExitAnimation">@anim/fade_in</item>
+        <item name="android:taskCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+</resources>

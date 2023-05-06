@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/almostTranslucent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:id="@+id/friday_main">
+
+    <RelativeLayout
+        android:id="@+id/friday_cr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="3"
+        android:elevation="4dp"
+        android:background="@drawable/friday_bg">
+
+        <TextView
+            android:id="@+id/friday_cr_monitor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Inverse"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/friday_cr_layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/translucent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>
